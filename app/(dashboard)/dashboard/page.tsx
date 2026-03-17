@@ -10,7 +10,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     if (!isPending && !session?.user) {
-      router.push("/auth/sign-in");
+      router.push("/sign-in");
     }
   }, [isPending, session, router]);
 
