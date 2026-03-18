@@ -10,7 +10,7 @@ export default function SignInPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
     setLoading(true);
@@ -20,6 +20,7 @@ export default function SignInPage() {
     const res = await signIn.email({
       email: formData.get("email") as string,
       password: formData.get("password") as string,
+      callbackURL: "/dashboard"
     });
 
     if (res.error) {
