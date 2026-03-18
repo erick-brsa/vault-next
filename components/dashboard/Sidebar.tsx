@@ -66,7 +66,10 @@ export default function Sidebar() {
 
             {/* Botón de Acción Rápida & Logout */}
             <div className="p-4 mt-auto border-t border-zinc-200 dark:border-zinc-800 space-y-2">
-                <button className="cursor-pointer w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white py-2.5 rounded-xl text-sm font-semibold transition-all shadow-md shadow-violet-500/20">
+                <button 
+                    className="cursor-pointer w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white py-2.5 rounded-xl text-sm font-semibold transition-all shadow-md shadow-violet-500/20"
+                    onClick={() => router.push("/dashboard/subscription/new")}
+                    >
                     <PlusCircle size={18} />
                     Nueva Suscripción
                 </button>
