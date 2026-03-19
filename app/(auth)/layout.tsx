@@ -3,12 +3,12 @@ import { Logo } from "@/components/Logo";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 transition-colors duration-300">
-      
+    <div className="min-h-screen flex flex-col w-full bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 transition-colors duration-300">
+
       {/* Navbar con Zinc neutro */}
-      <nav className="w-full py-5 px-6 md:px-12 flex justify-start items-center border-b border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/50 backdrop-blur-md sticky top-0 z-50">
+      <nav className="w-full h-18 px-6 md:px-16 lg:px-24 xl:px-32 flex justify-start items-center border-b border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/50 backdrop-blur-md sticky top-0 z-50">
         <Link href="/" className="flex items-center gap-3 group">
-          <Logo className="w-10 h-10 drop-shadow-md dark:drop-shadow-[0_0_12px_rgba(124,58,237,0.4)] group-hover:scale-105 transition-transform" />
+          <Logo className="w-9 h-9 drop-shadow-md dark:drop-shadow-[0_0_12px_rgba(124,58,237,0.4)] transition-transform group-hover:scale-110" />
           <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-zinc-900 to-zinc-600 dark:from-zinc-100 dark:to-zinc-400">
             Vault
           </span>
